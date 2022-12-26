@@ -82,7 +82,7 @@ You are asked to use your model to predict the scratch/not scratch status of the
 
 Pay attention to the following points:
 
-- Exploratory and analysis of the data
+- Exploratoration and analyze the data
 - Consideration of business goals
 - Selection of relevant machine learning models
 - Appropriate choice of metrics
