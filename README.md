@@ -4,6 +4,13 @@ Scratch Detection Assignment for a student position in the data science team at 
 <img src="assets/NI_logo.png" width="100" height="100">
 Before you start working on this assignment, make sure you meet the prerequisites below: <a href="https://pef.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/4998">Machine Learning Engineer Student Job Description</a>
 
+**Main mandatory requirements:**
+
+- Studying for M.Sc/B.Sc in Computer Science or related technical discipline( M.Sc is a big advantage)
+- Remaining studies of at least one and a half years.
+- Availability for 3-4 working days a week.
+- Located in Israel
+
 ## Introduction:
 
 In the semiconductor industry, **"wafers"** are thin discs of semiconductor material, such as silicon, used to fabricate microelectronic devices such as transistors, integrated circuits, and other components. A single wafer can contain hundreds or thousands of individual devices, known as **"dies"**, which are typically cut or "diced" from the wafer after the manufacturing process is completed.
@@ -11,7 +18,7 @@ In the semiconductor industry, **"wafers"** are thin discs of semiconductor mate
 You can read more about semiconductor here: <a href="https://www.amd.com/en/technologies/introduction-to-semiconductors//">Introduction to Semiconductors</a>
 
 <figure>
-  <img src="assets/wafer.jpeg" width="250" height="180" style="float: middle;">
+  <img src="assets/wafer.jpeg" width="400" height="400", alt="Trulli">
   <figcaption>Fig.1 - An example of a standard wafer</figcaption>
 </figure>
 
@@ -20,7 +27,7 @@ One of the challenges in manufacturing wafers is to identify and isolate defects
 Scratches are seen as elongated clusters of bad dies that have a high aspect ratio, meaning they are relatively thin and long compared to their width. They can be caused by equipment misalignment or mishandling by humans, and may contain latent defects that can affect the performance of the devices. Scratches may not always be continuous, so sometimes there may be good dies within the scratch. These good dies are often marked for removal in a manual process called "**Inked dies**" 
 
 <figure>
-  <img src="assets/scratch.png">
+  <img src="assets/scratch.png" width="600" height="600">
   <figcaption>Fig.2 - A scratch on a wafer - an optical view</figcaption>
 </figure>
 
@@ -28,23 +35,25 @@ In the data that you receive, there may be faulty dies that are part of a scratc
 
 Many times, the Scratch Detection process will be done on the logical wafer map and not on a visual image of it.
 
+The data that you received is called **"wafer map"** as it maps the status of all dies in the wafer.
+
 The dies in the wafers are tested in a large number of stations, operations, and in each operation it is possible to create a map of the dies in this operation by coloring the good dies in a certain color and the faulty dies in another color.
 
 <figure>
-  <img src="assets/wafer_map.png" width="200" height="200" style="float: middle;">
+  <img src="assets/wafer_map.png" width="400" height="400">
   <figcaption>Fig.3 - A logical wafer map in a certain operation. good dies in green and bad dies in red</figcaption>
 </figure>
 
 Did you notice a scratch on this wafer?
 
-Well, with our eyes it is easy to notice the scratch that comes out from the left side in the center of the wafer. 
+Well, with our eyes it is easy to notice the scratch that comes out from the right side in the center of the wafer. 
 
 Note, that this scratch is not continuous, meaning, not all the dies which are placed on this scratch are considered faults in this operation. We have to identify all scracthed dies including bad & good. The good dies that are part of the scartch have to be itendified actively in order to be killed. This process is called "inking". 
 
 We kill them because we fear that a physical scratch on the silicon wafer is what caused the sequence of these faulty dies, therefore even dies that passed the tests may be of low quality because they were damaged by the scratch on which they are placed.
 
 <figure>
-  <img src="assets/wafer_map_with_marks.png" width="200" height="200" style="float: middle;">
+  <img src="assets/wafer_map_with_marks.png" width="400" height="400">
   <figcaption>Fig.4 - A wafer map in a certain operation with scratch detection marks. good dies in grenn, bad dies in red, scratch in blue, ink in yellow</figcaption>
 </figure>
 
@@ -65,6 +74,8 @@ The table data includes the following columns:
 - `IsScratchDie`: A binary column indicating whether the die belongs to a scratch or not.
 
 Your goal is to use the training data to build a model that can predict, given a certain wafer map, the dies on the map that are parts of a scratch (whether they are bad, 'Scratch' or good, 'Ink').
+
+*The purpose of the assignment is mainly to analyze the problem correctly using appropriate algorithms and not necessarily to get the highest metric score on the test-set. even a low score may be considered a success*
 
 Business goals:
 
@@ -87,8 +98,6 @@ Pay attention to the following points:
 - Selection of relevant machine learning models
 - Appropriate choice of metrics
 
-*The purpose of the assignment is not just to get a high metric score in the test-set but mainly to analyze the problem correctly.*
-
 ## Submission
 
 1. After completing the assignment please review your notebook, making sure it ran properly from start to finish
@@ -97,5 +106,6 @@ Pay attention to the following points:
     - roni.goldshmidt@ni.com / miriam.horovicz@ni.com 
     - The email should include a zip file with your notebook and a CSV file with the prediction.
 4. After receiving the email with the assignment we will inform you about the next steps
+
 
 Good Luck!
