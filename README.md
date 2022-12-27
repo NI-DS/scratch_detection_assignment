@@ -75,7 +75,7 @@ The table data includes the following columns:
 
 Your goal is to use the training data to build a model that can predict, given a certain wafer map, the dies on the map that are parts of a scratch (whether they are bad, 'Scratch' or good, 'Ink').
 
-*The purpose of the assignment is mainly to analyze the problem correctly using appropriate algorithms and not necessarily to get the highest metric score on the test-set. even a low score may be considered a success*
+*The purpose of the assignment is mainly to get to reasonable solution that can help the business. Please note that real industry solutions usually achieve lower scores than you may be used from academic problems so even a low metric score on the test set may be considered a success*
 
 Business goals:
 
