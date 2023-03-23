@@ -2,7 +2,7 @@
 Scratch Detection Assignment for a student position in the data science team at NI
 
 <img src="assets/NI_logo.png" width="100" height="100">
-Before you start working on this assignment, make sure you meet the prerequisites below: <a href="https://pef.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/4998">Machine Learning Engineer Student Job Description</a>
+Before you start working on this assignment, make sure you meet the prerequisites below: <a href="https://pef.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/6927">Machine Learning Engineer Student Job Description</a>
 
 **Main mandatory requirements:**
 
